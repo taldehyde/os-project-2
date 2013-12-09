@@ -1,0 +1,1042 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>report</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>Nachos Project2 Report</h1>
+<h2>b99901131 卓旻科</h2>
+<h3>1. Implement Sleep(int) system call</h3>
+<p>Define新的system call code並且宣告<code>void Sleep(int x)</code></p>
+<p>in userprog/syscall.h</p>
+<pre><code>#define SC_Sleep    12
+...
+void Sleep(int x);      //sleep system call 
+</code></pre>
+
+<p>增加新的exeption來處理SC_Sleep system call</p>
+<p>in userprog/exeption.cc</p>
+<pre><code>switch(type){
+    ...
+    case SC_Sleep:
+        val=kernel-&gt;machine-&gt;ReadRegister(4);
+        kernel-&gt;alarm-&gt;WaitUntil(val);
+        return;
+    ...
+}
+</code></pre>
+
+<p>在<code>Alarm::WaitUntil(int x)</code>裡處理sleep system call</p>
+<p>in threads/alarm.cc</p>
+<pre><code>void Alarm::WaitUntil(int x)
+{
+    kernel-&gt;scheduler-&gt;SetSleeping(x);
+}
+</code></pre>
+
+<p>將正在進行的thread讓他暫時sleeping，並使用<code>sleepingList</code>來記錄sleeping threads。
+而<code>sleepingList</code>是一個SortedList，剩餘sleeping時間最小的會排在最前面。</p>
+<p>in threads/scheduler.cc</p>
+<pre><code>void 
+Scheduler::SetSleeping(int sleepTime)
+{
+    kernel-&gt;interrupt-&gt;SetLevel(IntOff);
+    Thread* thread = kernel-&gt;currentThread;
+    ...
+    sleepingList-&gt;Insert(SleepingThread(thread,sleepTime));
+    thread-&gt;Sleep(FALSE);
+    kernel-&gt;interrupt-&gt;SetLevel(IntOn);
+}
+</code></pre>
+
+<p>Alarm的設定是每100 ticks會產生interrupt，並呼叫<code>Alarm::CallBack()</code>，在這裡呼叫
+<code>kernel-&gt;scheduler-&gt;AlarmTicks()</code>，以提醒scheduler將剩餘睡眠次數減一，並將睡眠次數歸零的thread重新排入readyList。</p>
+<p>in threads/alarm.cc</p>
+<pre><code>void 
+Alarm::CallBack() 
+{
+    //manage sleeping threads
+    bool slEmpty = kernel-&gt;scheduler-&gt;IsSleepingListEmpty();
+    kernel-&gt;scheduler-&gt;AlarmTicks();
+
+    Interrupt *interrupt = kernel-&gt;interrupt;
+    MachineStatus status = interrupt-&gt;getStatus();
+    if (status == IdleMode &amp;&amp; slEmpty) {    // is it time to quit?
+        if (!interrupt-&gt;AnyFutureInterrupts()) {
+            timer-&gt;Disable();   // turn off the timer
+        }
+    } else {            // there's someone to preempt
+        if(kernel-&gt;scheduler-&gt;getSchedulerType() == SJF){
+            return;
+        }
+        interrupt-&gt;YieldOnReturn();
+    }
+}
+</code></pre>
+
+<p>in threads/scheduler.cc</p>
+<pre><code>void 
+Scheduler::AlarmTicks()
+{
+    ListIterator&lt;SleepingThread&gt; iter(sleepingList);
+    for (; !iter.IsDone(); iter.Next()) {
+        iter.Item().decreaseTime(1);
+    }   
+    while(!sleepingList-&gt;IsEmpty()){
+        SleepingThread st = sleepingList-&gt;Front();
+        if(st.getSleepTime() == 0){
+            ReadyToRun(st.getThread());
+            sleepingList-&gt;RemoveFront();
+        }
+        else { break; }
+    }
+}
+</code></pre>
+
+<h3>2. Implement Non-preemptive shortest job first scheduler</h3>
+<p>在kernel裡增加指令，讓我們可以用<code>./nachos -SJF ...</code>來使用SJF。</p>
+<p>in threads/kernel.cc</p>
+<pre><code>ThreadedKernel::ThreadedKernel(int argc, char **argv)
+{
+    randomSlice = FALSE; 
+    sType = RR;
+    for (int i = 1; i &lt; argc; i++) {
+        if (strcmp(argv[i], &quot;-rs&quot;) == 0) {
+        ASSERT(i + 1 &lt; argc);
+        RandomInit(atoi(argv[i + 1]));// initialize pseudo-random
+                    // number generator
+        randomSlice = TRUE;
+        i++;
+        } 
+        else if (strcmp(argv[i], &quot;-u&quot;) == 0) {
+            cout &lt;&lt; &quot;Partial usage: nachos [-rs randomSeed]\n&quot;;
+            cout &lt;&lt; &quot;Partial usage: nachos [-SJF]\n&quot;;
+        }
+        else if (strcmp(argv[i], &quot;-SJF&quot;) == 0) {
+           sType = SJF;
+        }
+    }
+}
+
+void
+ThreadedKernel::Initialize()
+{
+    stats = new Statistics();       // collect statistics
+    interrupt = new Interrupt;      // start up interrupt handling
+    scheduler = new Scheduler(sType);   // initialize the ready queue
+    alarm = new Alarm(randomSlice); // start up time slicing
+    ...
+}
+</code></pre>
+
+<p>我們想讓thread在sleep的時候再交出CPU的使用權，而預設的RR切換的時間點在<code>interrupt-&gt;YieldOnReturn();</code>這裡。使用SJF時我們不希望有切換，所以直接<code>return;</code></p>
+<p>in threads/alarm.cc</p>
+<pre><code>void 
+Alarm::CallBack() 
+{
+    //manage sleeping threads
+    bool slEmpty = kernel-&gt;scheduler-&gt;IsSleepingListEmpty();
+    kernel-&gt;scheduler-&gt;AlarmTicks();
+
+    Interrupt *interrupt = kernel-&gt;interrupt;
+    MachineStatus status = interrupt-&gt;getStatus();
+    if (status == IdleMode &amp;&amp; slEmpty) {    // is it time to quit?
+        if (!interrupt-&gt;AnyFutureInterrupts()) {
+            timer-&gt;Disable();   // turn off the timer
+        }
+    } else {            // there's someone to preempt
+        if(kernel-&gt;scheduler-&gt;getSchedulerType() == SJF){
+            return;
+        }
+        interrupt-&gt;YieldOnReturn();
+    }
+}
+</code></pre>
+
+<p>當thread要sleeping的時候，我們紀錄它實際使用CPU的時間，在這裡等同於<code>kernel-&gt;stats-&gt;userTicks</code>，因為執行一個user instruction，<code>userTicks</code>就會+1。
+因此我們紀錄thread開始到到sleep間的<code>userTicks</code>變化，來得到實際的CPU burst，並配合預測公式來得到我們預測的next CPU burst。
+我們將預測出來的值用<code>burstTimeMap</code>(<code>std::map</code>)來管理，如此一來查詢時會比較方便。</p>
+<p>in threads/scheduler.cc</p>
+<pre><code>void 
+Scheduler::SetSleeping(int sleepTime)
+{
+    kernel-&gt;interrupt-&gt;SetLevel(IntOff);
+    Thread* thread = kernel-&gt;currentThread;
+
+    if(schedulerType == SJF){
+        //record cpu burst(user ticks)
+        ASSERT(burstTimeMap-&gt;find(thread) != burstTimeMap-&gt;end());
+
+        int prevBurst = (*burstTimeMap)[thread];
+        int actualBurst = kernel-&gt;stats-&gt;userTicks - prevTicks;
+        int estiBurst = (int) (actualBurst*RATE + prevBurst*(1-RATE));
+        (*burstTimeMap)[thread] = estiBurst;
+        prevTicks = kernel-&gt;stats-&gt;userTicks;
+        cout &lt;&lt; &quot;\nThread &quot; &lt;&lt; thread-&gt;getName() 
+             &lt;&lt; &quot;\nprevBurst:\t&quot; &lt;&lt; prevBurst
+             &lt;&lt; &quot;\nactualBurst:\t&quot; &lt;&lt; actualBurst
+             &lt;&lt; &quot;\nestiBurst:\t&quot;   &lt;&lt; estiBurst &lt;&lt; endl &lt;&lt; endl;
+    }
+
+    sleepingList-&gt;Insert(SleepingThread(thread,sleepTime));
+    thread-&gt;Sleep(FALSE);
+    kernel-&gt;interrupt-&gt;SetLevel(IntOn);
+}
+</code></pre>
+
+<p>當使用SJF時，我們必須將原本的<code>readyList</code>改成SortedList，並使用預測出的CPU burst來排<code>readyList</code>。
+而第一次加入readyList的thread，我們將其預測的CPU burst設為0。</p>
+<p>in threads/scheduler.cc</p>
+<pre><code>int burstCompare(Thread* a, Thread* b)
+{
+    int aTime = (*(kernel-&gt;scheduler-&gt;burstTimeMap))[a];
+    int bTime = (*(kernel-&gt;scheduler-&gt;burstTimeMap))[b];
+    if(aTime == bTime) { return 0; }
+    if(aTime &gt; bTime) { return 1; }
+    if(aTime &lt; bTime) { return -1; }
+}
+
+Scheduler::Scheduler(SchedulerType type)
+{
+    schedulerType = type;
+    readyList = new List&lt;Thread *&gt;; 
+    sleepingList = new SortedList&lt;SleepingThread&gt; (mySTCompare);
+    if(schedulerType == SJF){
+        delete readyList;
+        burstTimeMap = new map&lt;Thread* , int&gt;;
+        readyList = new SortedList&lt;Thread *&gt;(burstCompare); 
+    }
+    toBeDestroyed = NULL;
+} 
+
+void
+Scheduler::ReadyToRun (Thread *thread)
+{
+    ASSERT(kernel-&gt;interrupt-&gt;getLevel() == IntOff);
+    DEBUG(dbgThread, &quot;Putting thread on ready list: &quot; &lt;&lt; thread-&gt;getName());
+    if(schedulerType == SJF){     
+        if(burstTimeMap-&gt;find(thread) == burstTimeMap-&gt;end()){
+            //thread not found
+            (*burstTimeMap)[thread] = 0;
+        }
+    }       
+    thread-&gt;setStatus(READY);
+    readyList-&gt;Append(thread);
+}
+</code></pre>
+
+<h3>Result</h3>
+<p>使用了以下三個檔案來做測試。
+我們可以從第一個數字來辨別每個output分別是屬於哪一個thread。</p>
+<p>test/sjf_test1.c</p>
+<pre><code>int
+main()
+{
+    int i;
+    int j;
+    for(i = 0; i &lt; 9; i++){
+        for(j = 0; j &lt; 5; j++){
+            PrintInt(100+i*10+j);
+        }
+        Sleep(1);
+    }
+}
+</code></pre>
+
+<p>test/sjf_test2.c</p>
+<pre><code>int
+main()
+{
+    int i;
+    int j;
+    for(i = 0; i &lt; 9; i++){
+        for(j = 0; j &lt; 9; j++){
+            PrintInt(200+i*10+j);
+        }
+        Sleep(1);
+    }
+}
+</code></pre>
+
+<p>test/sjf_test3.c</p>
+<pre><code>int
+main()
+{
+    int i;
+    for(i = 0; i &lt; 9; i++){
+        PrintInt(i*10+300);
+        Sleep(1);
+    }
+}
+</code></pre>
+
+<p>使用預設的RR 
+<code>./userprog/nachos -e ./test/sjf_test1.c -e ./test/sjf_test2.c -e ./test/sjf_test3.c</code></p>
+<p>結果</p>
+<p><code>project2_rr</code></p>
+<pre><code>Total threads number is 3
+Thread ./test/sjf_test1 is executing.
+Thread ./test/sjf_test2 is executing.
+Thread ./test/sjf_test3 is executing.
+Print integer:100
+Print integer:200
+Print integer:201
+Print integer:202
+Print integer:300
+Print integer:101
+Print integer:102
+Print integer:203
+Print integer:204
+Print integer:205
+Print integer:310
+Print integer:103
+Print integer:104
+Print integer:206
+Print integer:207
+Print integer:208
+Print integer:210
+Print integer:211
+Print integer:320
+Print integer:110
+Print integer:212
+Print integer:213
+Print integer:214
+Print integer:215
+Print integer:330
+Print integer:111
+Print integer:112
+Print integer:216
+Print integer:217
+Print integer:218
+Print integer:340
+Print integer:113
+Print integer:114
+Print integer:350
+Print integer:360
+Print integer:120
+Print integer:220
+Print integer:221
+Print integer:222
+Print integer:370
+Print integer:121
+Print integer:122
+Print integer:223
+Print integer:224
+Print integer:225
+Print integer:380
+Print integer:123
+Print integer:124
+Print integer:226
+Print integer:227
+Print integer:228
+Print integer:230
+Print integer:231
+return value:0
+Print integer:130
+Print integer:131
+Print integer:232
+Print integer:233
+Print integer:234
+Print integer:132
+Print integer:133
+Print integer:134
+Print integer:235
+Print integer:236
+Print integer:237
+Print integer:238
+Print integer:240
+Print integer:241
+Print integer:140
+Print integer:141
+Print integer:142
+Print integer:242
+Print integer:243
+Print integer:244
+Print integer:245
+Print integer:143
+Print integer:144
+Print integer:150
+Print integer:151
+Print integer:152
+Print integer:246
+Print integer:247
+Print integer:248
+Print integer:250
+Print integer:251
+Print integer:252
+Print integer:153
+Print integer:154
+Print integer:253
+Print integer:160
+Print integer:161
+Print integer:162
+Print integer:254
+Print integer:255
+Print integer:256
+Print integer:163
+Print integer:164
+Print integer:257
+Print integer:170
+Print integer:171
+Print integer:172
+Print integer:258
+Print integer:173
+Print integer:260
+Print integer:261
+Print integer:262
+Print integer:174
+Print integer:263
+Print integer:264
+Print integer:180
+Print integer:181
+Print integer:182
+Print integer:265
+Print integer:266
+Print integer:267
+Print integer:183
+Print integer:184
+Print integer:268
+return value:0
+Print integer:270
+Print integer:271
+Print integer:272
+Print integer:273
+Print integer:274
+Print integer:275
+Print integer:276
+Print integer:277
+Print integer:278
+Print integer:280
+Print integer:281
+Print integer:282
+Print integer:283
+Print integer:284
+Print integer:285
+Print integer:286
+Print integer:287
+Print integer:288
+return value:0
+No threads ready or runnable, and no pending interrupts.
+Assuming the program completed.
+Machine halting!
+
+Ticks: total 5100, idle 216, system 840, user 4044
+Disk I/O: reads 0, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 0
+Network I/O: packets received 0, sent 0
+</code></pre>
+
+<p>使用SJF
+<code>./userprog/nachos -SJF -e ./test/sjf_test1.c -e ./test/sjf_test2.c -e ./test/sjf_test3.c</code></p>
+<p>結果</p>
+<p><code>project2_sjf</code></p>
+<pre><code>Total threads number is 3
+Thread ./test/sjf_test1 is executing.
+Thread ./test/sjf_test2 is executing.
+Thread ./test/sjf_test3 is executing.
+Print integer:100
+Print integer:101
+Print integer:102
+Print integer:103
+Print integer:104
+
+Thread ./test/sjf_test1
+prevBurst:  0
+actualBurst:    156
+estiBurst:  78
+
+Print integer:200
+Print integer:201
+Print integer:202
+Print integer:203
+Print integer:204
+Print integer:205
+Print integer:206
+Print integer:207
+Print integer:208
+
+Thread ./test/sjf_test2
+prevBurst:  0
+actualBurst:    260
+estiBurst:  130
+
+Print integer:300
+
+Thread ./test/sjf_test3
+prevBurst:  0
+actualBurst:    31
+estiBurst:  15
+
+Print integer:110
+Print integer:111
+Print integer:112
+Print integer:113
+Print integer:114
+
+Thread ./test/sjf_test1
+prevBurst:  78
+actualBurst:    154
+estiBurst:  116
+
+Print integer:310
+
+Thread ./test/sjf_test3
+prevBurst:  15
+actualBurst:    29
+estiBurst:  22
+
+Print integer:120
+Print integer:121
+Print integer:122
+Print integer:123
+Print integer:124
+
+Thread ./test/sjf_test1
+prevBurst:  116
+actualBurst:    154
+estiBurst:  135
+
+Print integer:320
+
+Thread ./test/sjf_test3
+prevBurst:  22
+actualBurst:    29
+estiBurst:  25
+
+Print integer:210
+Print integer:211
+Print integer:212
+Print integer:213
+Print integer:214
+Print integer:215
+Print integer:216
+Print integer:217
+Print integer:218
+
+Thread ./test/sjf_test2
+prevBurst:  130
+actualBurst:    258
+estiBurst:  194
+
+Print integer:330
+
+Thread ./test/sjf_test3
+prevBurst:  25
+actualBurst:    29
+estiBurst:  27
+
+Print integer:130
+Print integer:131
+Print integer:132
+Print integer:133
+Print integer:134
+
+Thread ./test/sjf_test1
+prevBurst:  135
+actualBurst:    154
+estiBurst:  144
+
+Print integer:340
+
+Thread ./test/sjf_test3
+prevBurst:  27
+actualBurst:    29
+estiBurst:  28
+
+Print integer:140
+Print integer:141
+Print integer:142
+Print integer:143
+Print integer:144
+
+Thread ./test/sjf_test1
+prevBurst:  144
+actualBurst:    154
+estiBurst:  149
+
+Print integer:350
+
+Thread ./test/sjf_test3
+prevBurst:  28
+actualBurst:    29
+estiBurst:  28
+
+Print integer:150
+Print integer:151
+Print integer:152
+Print integer:153
+Print integer:154
+
+Thread ./test/sjf_test1
+prevBurst:  149
+actualBurst:    154
+estiBurst:  151
+
+Print integer:360
+
+Thread ./test/sjf_test3
+prevBurst:  28
+actualBurst:    29
+estiBurst:  28
+
+Print integer:160
+Print integer:161
+Print integer:162
+Print integer:163
+Print integer:164
+
+Thread ./test/sjf_test1
+prevBurst:  151
+actualBurst:    154
+estiBurst:  152
+
+Print integer:370
+
+Thread ./test/sjf_test3
+prevBurst:  28
+actualBurst:    29
+estiBurst:  28
+
+Print integer:170
+Print integer:171
+Print integer:172
+Print integer:173
+Print integer:174
+
+Thread ./test/sjf_test1
+prevBurst:  152
+actualBurst:    154
+estiBurst:  153
+
+Print integer:380
+
+Thread ./test/sjf_test3
+prevBurst:  28
+actualBurst:    29
+estiBurst:  28
+
+Print integer:180
+Print integer:181
+Print integer:182
+Print integer:183
+Print integer:184
+
+Thread ./test/sjf_test1
+prevBurst:  153
+actualBurst:    154
+estiBurst:  153
+
+return value:0
+return value:0
+Print integer:220
+Print integer:221
+Print integer:222
+Print integer:223
+Print integer:224
+Print integer:225
+Print integer:226
+Print integer:227
+Print integer:228
+
+Thread ./test/sjf_test2
+prevBurst:  194
+actualBurst:    258
+estiBurst:  226
+
+Print integer:230
+Print integer:231
+Print integer:232
+Print integer:233
+Print integer:234
+Print integer:235
+Print integer:236
+Print integer:237
+Print integer:238
+
+Thread ./test/sjf_test2
+prevBurst:  226
+actualBurst:    258
+estiBurst:  242
+
+Print integer:240
+Print integer:241
+Print integer:242
+Print integer:243
+Print integer:244
+Print integer:245
+Print integer:246
+Print integer:247
+Print integer:248
+
+Thread ./test/sjf_test2
+prevBurst:  242
+actualBurst:    258
+estiBurst:  250
+
+Print integer:250
+Print integer:251
+Print integer:252
+Print integer:253
+Print integer:254
+Print integer:255
+Print integer:256
+Print integer:257
+Print integer:258
+
+Thread ./test/sjf_test2
+prevBurst:  250
+actualBurst:    258
+estiBurst:  254
+
+Print integer:260
+Print integer:261
+Print integer:262
+Print integer:263
+Print integer:264
+Print integer:265
+Print integer:266
+Print integer:267
+Print integer:268
+
+Thread ./test/sjf_test2
+prevBurst:  254
+actualBurst:    258
+estiBurst:  256
+
+Print integer:270
+Print integer:271
+Print integer:272
+Print integer:273
+Print integer:274
+Print integer:275
+Print integer:276
+Print integer:277
+Print integer:278
+
+Thread ./test/sjf_test2
+prevBurst:  256
+actualBurst:    258
+estiBurst:  257
+
+Print integer:280
+Print integer:281
+Print integer:282
+Print integer:283
+Print integer:284
+Print integer:285
+Print integer:286
+Print integer:287
+Print integer:288
+
+Thread ./test/sjf_test2
+prevBurst:  257
+actualBurst:    258
+estiBurst:  257
+
+return value:0
+No threads ready or runnable, and no pending interrupts.
+Assuming the program completed.
+Machine halting!
+
+Ticks: total 4719, idle 335, system 340, user 4044
+Disk I/O: reads 0, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 0
+Network I/O: packets received 0, sent 0
+</code></pre>
+
+<p>可以看到執行較少次的<code>sjf_test3</code>確實較快完成，而執行最多次的<code>sjf_test2</code>也是最後一個完成，
+因此這個SJF schedule可以得到證實。
+且因為是non-preemptive的方式，所以content switch的次數(相當於system ticks)較少。</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
